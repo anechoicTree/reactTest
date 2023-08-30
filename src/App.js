@@ -3,6 +3,7 @@ import './App.css';
 import CreateMovie from './Components/CreateMovie';
 import Movies from './Components/Movies';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+// import Navigation from './Components/Navigation';
 
 const DUMMY_MOVIES = [
   { id: '1', title: 'Movie1', genre: 'Drama', release_date: '2022-01-01' },
@@ -34,12 +35,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div>
+      <div>
           <table className="menu">
-            <td><Link to="/list">List</Link></td>
-            <td><Link to="/add">Add New Movie</Link></td>
+          <td><Link to="/list">List</Link></td>
+          <td><Link to="/add">Add New Movie</Link></td>
           </table>
-        </div>
+      </div>
         <Routes>
           <Route path="" element={<Movies movies={movies} onDeleteMovie={handleDeleteMovie} />} />
           <Route path="/list" element={<Movies movies={movies} onDeleteMovie={handleDeleteMovie} />} />
