@@ -1,0 +1,52 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-movie,
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-movie h1,
+.movie-list h1 {
+    margin: 5px;
+}
+
+.create-movie ul {
+    margin-top: 0px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-movie li {
+    margin-bottom: 1px;
+}
+
+.create-movie input,
+.create-movie button,
+.movie-list button {
+    margin: 2px;
+}
+
+.movie-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.movie-list th,
+.movie-list td {
+    padding: 2px 12px;
+    text-align: center;
+}
+
+.menu td{
+    padding: 2px 60px;
+}
